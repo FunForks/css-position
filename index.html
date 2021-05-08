@@ -10,7 +10,7 @@
   <body>
     <main>
       <div class="red">
-        <h2>1.</h2>
+        <h2>1. Static</h2>
         <p>This <code>&lt;div&gt;</code> has a default setting of:</p>
         <pre>  display: static;</pre>
         <p>It takes its place in the normal flow of the page.</p>
@@ -21,36 +21,40 @@
       </div>
 
       <div class="orange">
-        <h2>2.</h2>
+        <h2>2. Relative</h2>
         <p>This <code>&lt;div&gt;</code> has a custom setting of:</p>
         <pre>  display: relative;
   top: -3em;
   left: 75% /* of the width of its parent <code>&lt;main&gt;</code> */</pre>
        <p>It reserves its place in the normal flow: no other elements will move in to take its place.</p>
-        <p>
-          Its value for <code>z-index</code> is <code>auto</code> by default, but it appears above the red <code>&lt;div&gt;</code> because the <code>z-index</code> of the red <code>&lt;div&gt;</code> is ignored.
+       <p>The values for its <code>top</code> and <code>left</code> properties position it relative to its default position in the flow.</p>
+        <p>Its value for <code>z-index</code> is <code>auto</code> by default, but it appears above the red <code>&lt;div&gt;</code> because the <code>z-index</code> of the red <code>&lt;div&gt;</code> is ignored.
         </p>
       </div>
 
       <div class="yellow">
-        <h2>3.</h2>
+        <h2>3. Static</h2>
         <p>This <code>&lt;div&gt;</code> has a default setting of:</p>
         <pre>  display: static;</pre>
         <p>It takes its place in the normal flow of the page.</p>
       </div>
 
       <div class="green">
-        <h2>4.</h2>
+        <h2>4. Absolute</h2>
         <p>This <code>&lt;div&gt;</code> has a custom setting of:</p>
         <pre>  display: absolute;
+  top: 83.333vh;
+  left: 75%;
   z-index: 10;</pre>
         <p>It is removed from the normal flow of the page, so the cyan <code>&lt;div&gt;</code> moves up to take its place.</p>
+        <p>The values for its <code>top</code> and <code>left</code> properties position it with respect to its nearest parent for which the value of <code>position</code> is not <code>static</code>. In this case, this is the <code>&lt;main&gt;</code> element, which has a grey background.</p>
+
         <p>It appears in front of the cyan <code>&lt;div&gt;</code> because it has a higher value for <code>z-index</code>.</p>
       </div>
       </div>
 
       <div class="cyan">
-        <h2>5.</h2>
+        <h2>5. Relative</h2>
         <p>This <code>&lt;div&gt;</code> has a custom setting of:</p>
         <pre>  display: relative;
   z-index: 2;</pre>
@@ -58,12 +62,14 @@
         <p>It appears behind the green <code>&lt;div&gt;</code>, because it has a lower value for <code>z-index</code>.</p>
       </div>
       <div class="blue">
-        <h2>6.</h2>
+        <h2>6. Sticky</h2>
+        <h3>(Scroll down)</h3>
         <p>This <code>&lt;div&gt;</code> has a default setting of:</p>
         <pre>  display: sticky;
   top: 20vh;
   left: 0px;
-  width: 75%;</pre>
+  width: 75%;
+  height: 33vh;</pre>
         <p>It takes its place in the normal flow of the page until it reaches the position within the viewport indicated by the <code>top</code> or <code>left</code> attributes.</p>
         <p>When this happens it behaves as if it were <code>fixed</code>, but it remains constrained to the area of its parent (<code>&lt;main&gt;</code>), which means that it can be dragged out of the viewport as its parent is scrolled out of sight.</p>
 
@@ -72,7 +78,7 @@
 
       </div>
       <div class="indigo">
-        <h2>7.</h2>
+        <h2>7. Fixed</h2>
         <p>This <code>&lt;div&gt;</code> is fixed to the bottom of the viewport with the custom settings:
         </p>
         <pre>  position: fixed;
@@ -85,7 +91,7 @@
           <p>Its <code>z-index</code> setting places it in front of the cyan <code>&lt;div&gt;</code> but behind the green <code>&lt;div&gt;</code>.</p>
       </div>
       <div class="violet">
-        <h2>8.</h2>
+        <h2>8. Static</h2>
         <p>This <code>&lt;div&gt;</code> has a default setting of:</p>
         <pre>  display: static;</pre>
         <p>It takes its place in the normal flow of the page.</p>
