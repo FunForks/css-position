@@ -1,0 +1,81 @@
+html {
+  background-color: black;
+}
+
+body {
+  margin: 5vmin;
+  color: white;
+  font-size: 2.5vh;
+}
+
+main {
+  position: relative;
+  background-color: grey;
+}
+
+div {
+  width: 100%;
+  min-width: min-content;
+  height: 33vh;
+  opacity: 0.9;
+  overflow: auto;
+}
+
+.red {
+  background-color: red;
+  z-index: 99;
+}
+.orange {
+  background-color: orange;
+  position: relative;
+  top: -3em;
+  left: 75%;
+}
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+.green {
+  background-color: green;
+  position: absolute;
+  top: 83.333vh;
+  left: 75%;
+  z-index: 10;
+}
+.cyan {
+  background-color: cyan;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+.blue {
+  background-color: blue;
+  position: sticky;
+  top: 20vh;
+  left: 0px;
+  width: 75%;
+}
+.indigo {
+  background-color: indigo;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 5;
+}
+
+/* FIXED */
+.violet {
+  background-color: violet;
+  color: black;
+}
+
+h2,
+p,
+pre {
+  margin: 0 0.25em 0.5em;
+}
+
+footer {
+  height: 100vh;
+}
