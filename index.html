@@ -64,7 +64,11 @@
   top: 20vh;
   left: 0px;
   width: 75%;</pre>
-        <p>It takes its place in the normal flow of the page until it reaches the position within the viewport indicated by the <code>top</code> or <code>left</code> attributes. When this happens it behaves as if it were <code>fixed</code>, but it remains constrained to the area of its parent (<code>&lt;div&gt;</code>), which means that it can be dragged out of the viewport as its parent is scrolled out of sight.</p>
+        <p>It takes its place in the normal flow of the page until it reaches the position within the viewport indicated by the <code>top</code> or <code>left</code> attributes.</p>
+        <p>When this happens it behaves as if it were <code>fixed</code>, but it remains constrained to the area of its parent (<code>&lt;main&gt;</code>), which means that it can be dragged out of the viewport as its parent is scrolled out of sight.</p>
+
+        <p>It does not have a custom <code>z-index</code> property, so it will be hidden behind any <code>&lt;div&gt;</code> that appears further down the HTML page.
+        </p>
 
       </div>
       <div class="indigo">
