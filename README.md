@@ -8,4 +8,4 @@ Demonstration of the different values for the CSS property `position`:
 * fixed
 * sticky
 
-[Visit the preview](https://dciforks.github.io/css-position/)
+[Visit the preview](https://funforks.github.io/css-position/)
